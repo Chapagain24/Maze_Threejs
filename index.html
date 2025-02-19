@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>My first three.js app</title>
+    <title>3D Maze</title>
     <script type="importmap">
         {
           "imports": {
@@ -16,6 +16,15 @@
     </style>
 </head>
 <body>
-    <script type="module" src="/maze.js"></script>
+    <div id="controls-note" style="position: absolute; top: 20px; left: 20px; color: white; background: rgba(0, 0, 0, 0.5); padding: 10px; font-family: Arial, sans-serif; font-size: 14px;">
+        <strong>Controls:</strong><br>
+        - Press 'W' to move forward.<br>
+        - Press 'S' to move backward.<br>
+        - Press 'A' and 'D' to move left and right.<br>
+        - Press 'Spacebar' to go in to First Person view.<br>
+        - Press 'Q' to turn left and 'R' to turn right in First Person View<br>
+        - Hold Right mouse button in FPV to adjust viewing angle up or down<br>
+      </div>
+    <script type="module" src="./maze.js"></script>
 </body>
 </html>
